@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/satjon"
+     android:layout_gravity="center"
+        android:orientation="vertical">
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_gravity="bottom"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="মতিউর রহমান"
+                        android:onClick="moti1"
+                        android:textColor="@color/white"
+                        android:textSize="20dp"></Button>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:text="হামিদুর রহমান"
+                        android:textSize="20dp"
+                        android:onClick="hamid1"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content">
+                    </Button>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:text="রুহুল আমিন"
+                        android:onClick="ruhul1"
+                        android:textSize="20dp"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content">
+                    </Button>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick="mohi1"
+                        android:text="মহিউদ্দীন জাহাঙ্গীর"
+                        android:textColor="@android:color/white"
+                        android:textSize="20dp"></Button>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:text="নূর মুহাম্মদ শেখ"
+                        android:textSize="20dp"
+                        android:onClick="nur1"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content">
+                    </Button>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:text="মুন্সী আবদুর রউফ"
+                        android:textSize="20dp"
+                        android:onClick="rouf1"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content">
+                    </Button>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:text="মোস্তফা কামাল"
+                        android:textSize="20dp"
+                        android:onClick="mostofa1"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content">
+                    </Button>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:text="About Me"
+                        android:textSize="20dp"
+                        android:onClick="mehedi"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content">
+                    </Button>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:background="@drawable/back"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:background="@drawable/vin3"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="400dp"
+                    android:layout_height="286dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/moti1" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/moti"
+                    android:textColor="@color/black"
+                    android:textSize="20dp">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+
+</LinearLayout>
